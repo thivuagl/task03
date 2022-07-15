@@ -1,0 +1,59 @@
+/*------------------------------------------------------------
+footer
+------------------------------------------------------------*/
+.c-footer {
+    background-color: #ffff;
+    padding: 110px;
+    // min-width: 1860px;
+    width: 100%;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+    padding-bottom: 66px;
+
+    .c-footer__inner {
+        max-width: 1030px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        @include sp {
+            .c-contact {
+                text-align-last: left;
+            }
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .c-contact {
+        display: inline-block;
+        line-height: 1.714;
+        margin-top: 3px;
+        margin-left: 0;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+        
+    }
+
+    #logo {
+        display: inline-block;
+        float: right;
+        text-align: right;
+        font-size: 1em;
+        @include sp {
+            float: none;
+            text-align: center;
+            
+        }
+
+        img {
+            margin-top: 10px;
+        }
+
+        p {
+            margin-top: 6px;
+            margin-left: 3px;
+        }
+       
+    }
+}
+

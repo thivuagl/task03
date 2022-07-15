@@ -1,0 +1,51 @@
+/*------------------------------------------------------------
+icon
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-posts__item {
+    &:first-child {
+        .icon-down {
+            display: none;
+        }
+
+        .icon-up {
+            display: inline-block;
+        }
+    }
+
+    .icon-up {
+        display: none;
+    }
+
+    .viewmore {
+        background-color: #176b6a;
+        text-align: center;
+        height: 20px;
+        border-radius: 7.5px;
+
+        img {
+            display: inline-block;
+            width: 35px !important;
+            height: 15px !important;
+        }
+
+        &::before {
+            content: "";
+            width: 35px;
+            height: 15px;
+            background-image: url(../../_public/assets/img/icondown.png);
+            background-size: contain;
+            display: inline-block;
+        }
+    }
+
+    .c-show {
+        .viewmore {
+            &::before {
+                background-image: url(../../_public/assets/img/iconup.png);
+            }
+        }
+    }
+}

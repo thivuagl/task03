@@ -1,0 +1,185 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    font-family: $main-fonts;
+    font-size: 1.4rem;
+    width: 100%;
+    padding: 30px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    background: url("../../_public/assets/img/BG1.png") no-repeat center;
+    background-size: cover;
+    @include sp {
+        padding: 15px;
+    }
+}
+//-------------------------------------------------------
+main {
+   
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    @include sp {
+        padding: 0 15px;
+    }
+  
+}
+
+section {
+    // padding: 50px 0 90px;
+}
+
+
+
+
+//-------------------------------------------------------
+.l-container {
+    max-width: $base-width;
+    margin: 0 auto;
+    overflow: visible;
+}
+//-------------------------------------------------------
+.c-mainvisual {
+   
+    padding: 100px 30px 50px;
+    @include tab {
+        padding: 30px;
+    }
+    @include sp {
+        padding: 15px 0 0;
+    }
+
+    &__inner {
+        background: url("../../_public/assets/img/bg_main.png") no-repeat center;
+        background-size: cover;
+        position: relative;
+        text-align: center;
+        height: 480px;
+        border-radius: 50px;
+        max-width: 1120px;
+
+        img {
+            position: absolute;
+            top: 100px;
+            left: 222px;
+            @include sp {
+                top: 31.5%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 145px;
+            }
+        }
+        @include sp {
+            background: url("../../_public/assets/img/mb.png") no-repeat center;
+            background-size: cover;
+            margin-top: -14px;
+            position: relative;
+            @include mb {
+                width: 315px;
+                height: 566px;
+                border-radius: 25px;
+            }
+           
+        
+            
+        }
+
+        .c-mainvisual__text {
+            position: absolute;
+            left: 15.65%;
+            bottom: 12.5%;
+            width: 100%;
+            max-width: 330px;
+            @include sp {
+                bottom: auto;
+                font-weight: 600;
+                left: auto;
+                top: 51%;
+
+            }
+
+            .u-text {
+                font-size: 1.6rem;
+                @include sp {
+                    font-size: 1.4rem;
+                    
+                }
+            }
+
+            p {
+                font-size: 1.6rem;
+                letter-spacing: 1.5px;
+                position: absolute;
+                top: -22px;
+                left: -11px;
+                font-size: 1.4rem;
+                @include sp {
+                    top: -28px;
+                    left: 1px;
+                    letter-spacing: 1px;
+                }
+               
+                
+            }
+
+            a {
+                font-size: 2.4rem;
+                color: #ffff;
+                background-color: #25a989;
+                border-radius: 30px;
+                line-height: 55px;
+                display: block;
+                width: 306px;
+                height: 55px;
+                letter-spacing: 8px;
+                margin-top: 13px;
+                padding-left: 5px;
+                @include sp {
+                    width: 196px;
+                    height: 35px;
+                    font-size: 1.5rem;
+                    line-height: 35px;
+                    font-weight: 500;
+                    margin-left: 58px;
+                    margin-top: 24px;
+                    letter-spacing: 6px;
+                    padding-left: 3px;
+                }
+            }
+
+            span {
+                font-size: 3rem;
+                letter-spacing: 3.5px;
+                display: inline-block;
+                margin-left: 0;
+                @include sp {
+                    font-size: 2rem;
+                    line-height: 1;
+                    letter-spacing: 0;
+                }
+                
+            }
+        }
+    }
+}
+
+h2 {
+    width: 100%;
+    flex-basis: 100%;
+    font-size: 8rem;
+    font-weight: 400;
+}
+
+p {
+    width: 100%;
+    // font-size: 2rem;
+}
+
+.c-btn1 {
+    margin-top: 50px;
+}
+
+//==================
+
+
+
